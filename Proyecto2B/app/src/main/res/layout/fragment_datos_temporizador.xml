@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosTemporizador">
+
+    <EditText
+        android:id="@+id/et_minutos_descanso"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/estilo_redondeado"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/et_segundos_descanso"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/estilo_redondeado"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_minutos_descanso"
+        app:layout_constraintStart_toEndOf="@+id/et_minutos_descanso"
+        app:layout_constraintTop_toTopOf="@+id/et_minutos_descanso"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Tiempo de descanso:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_iniciar_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/verde"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/et_segundos_descanso"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/et_minutos_descanso"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tiempo de trabajo:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_minutos_trabajo"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/estilo_redondeado"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/et_segundos_trabajo"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/estilo_redondeado"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_minutos_trabajo"
+        app:layout_constraintStart_toEndOf="@+id/et_minutos_trabajo"
+        app:layout_constraintTop_toTopOf="@+id/et_minutos_trabajo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_minutos_trabajo"
+        app:layout_constraintEnd_toStartOf="@+id/et_segundos_trabajo"
+        app:layout_constraintStart_toEndOf="@+id/et_minutos_trabajo"
+        app:layout_constraintTop_toTopOf="@+id/et_minutos_trabajo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_minutos_descanso"
+        app:layout_constraintEnd_toStartOf="@+id/et_segundos_descanso"
+        app:layout_constraintStart_toEndOf="@+id/et_minutos_descanso"
+        app:layout_constraintTop_toTopOf="@+id/et_minutos_descanso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
